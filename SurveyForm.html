@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">A survey form for you to fill in.</p>
+    <form id="survey-form" method="post" action="">
+      <fieldset>
+        <label for="name" id="name-label">Name: <input id="name" type="text" placeholder="Fiona" required></input></label>
+        <label for="email" id="email-label">Email: <input id="email" type="email" placeholder="f@gmail.com" required></input></label>
+        <label for="number" id="number-label">Number: <input id="number" type="number" pattern="[0-9]" min="15" max="95" placeholder="26"></input></label>
+      </fieldset>
+      <fieldset>
+        <label id="dropdownlist">How did you find our Survey?</label>
+        <select id="dropdown">
+          <option value="">(select one option)</option>
+          <option value="1">Email</option>
+          <option value="2">Word of Mouth</option>
+          <option value="3">Telephone</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label id="checkbox">How do you want to complete our Survey?</label>
+        <label for="name"><input class="inline" name="survey-type" id="form" type="radio" value="form">Online Form</input></label>
+      <label for="name"><input class="inline" name="survey-type" id="questionnaire" type="radio" value="questionnaire">Paper Questionnaire</input></label>
+      </fieldset>
+      <fieldset>
+        <label id="tickbox">Do you want to subscribe to our mailing list?</label>
+        <label for="checkbox"><input class="inline" type="checkbox" id="mailing-yes" value="yes" />Yes</label>
+        <label for="checkbox"><input class="inline" type="checkbox" id="mailing-no" value="no" />No</label>
+      </fieldset>
+      <fieldset>
+        <textarea id="textarea-label" rows="5" cols="35" placeholder="Feedback goes here..."></textarea>
+      </fieldset>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
